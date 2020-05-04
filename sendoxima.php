@@ -24,8 +24,8 @@ $sql = "INSERT INTO oximata (kodikos, hmerominia, eidos, marka, xroma, diefthins
 VALUES ('{$kodikos}', '{$hmerominia}','{$eidos}', '{$marka}', '{$xroma}', '{$diefthinsi}', '{$paratiriseis}')";
 
 if ($con->query($sql) === TRUE) {
-    echo "New record created successfully";
+    return "New record created successfully";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    return "Error: " . $sql . "<br>" . $conn->error;
 }
 ?>
